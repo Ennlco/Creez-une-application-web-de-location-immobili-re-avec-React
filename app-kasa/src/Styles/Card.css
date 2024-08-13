@@ -1,0 +1,14 @@
+.kasa-card{
+    width: 340px;
+    height: 340px;
+    border-radius: 15px;
+    background: linear-gradient(rgb(255,96,96) , rgb(178,67,67));  
+}
+
+p{
+    position: relative;
+    top: 80%;
+    left: 5%;
+    color: white;
+    font-size: 20px;
+}
