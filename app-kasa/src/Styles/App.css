@@ -19,12 +19,21 @@ header{
   height: 60px;
 }
 
-.kasa-lien{
+.kasa-lien-content{
   display: flex;
   justify-content: space-between;
   width: 272px;
+}
+
+.kasa-lien{
+  margin: 0px;
   color: black;
   font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.kasa-lien:hover{
+  text-decoration: underline;
 }
 
 .kasa-img-intro{

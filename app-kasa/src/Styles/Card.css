@@ -3,9 +3,10 @@
     height: 340px;
     border-radius: 15px;
     background: linear-gradient(rgb(255,96,96) , rgb(178,67,67));  
+    cursor: pointer;
 }
 
-p{
+.kasa-card-title{
     position: relative;
     top: 80%;
     left: 5%;
