@@ -1,7 +1,8 @@
 import logoHead from '../Assets/.LOGO.png'
 import logoFoot from '../Assets/LOGO.png'
 import CopyRight from '../Assets/© 2020 Kasa. All rights reserved.png'
-import App from './App'
+import Accueil from '../Acceuil/Accueil'
+import APropos from '../APropos/'
 import '../Styles/APropos.css'
 
 function APropos(){
@@ -9,8 +10,11 @@ function APropos(){
       <header>
         <img src={logoHead} alt='logo kasa' className="kasa-logo-header"/>
         <nav className="kasa-lien-content">
-          <a href='/App' className="kasa-lien">Accueil</a>
-          <a href='/' className="kasa-lien">A Propos</a>
+          <Navigation />
+              <Routes>
+                <Route path='/Acceuil/Accueil' element={<Accueil/>}/>
+                <Route path='/' element={<APropos/>}/>
+              </Routes>
         </nav>
       </header>
       <main>
