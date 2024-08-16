@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+
 import '../Styles/Accueil.css';
 import logoHead from '../Assets/.LOGO.png'
 import logoFoot from '../Assets/LOGO.png'
@@ -10,16 +10,11 @@ import Navigation from '../../Compoments/Navigation'
 
 function Accueil() {
     return (
-      <Router>
         <div className="Accueil">
           <header>
             <img src={logoHead} alt='logo kasa' className="kasa-logo-header"/>
             <nav className="kasa-lien-content">
               <Navigation />
-              <Routes>
-                <Route path='/' element={<Accueil/>}/>
-                <Route path='/APropos' element={<APropos/>}/>
-              </Routes>
             </nav>
           </header>
           <main>
@@ -35,7 +30,6 @@ function Accueil() {
           <img src={CopyRight} alt='Copyright' className="kasa-lcopyright"/>
           </footer>
       </div>
-      </Router>
     );
   }
   
