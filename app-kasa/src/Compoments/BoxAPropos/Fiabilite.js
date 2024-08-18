@@ -1,20 +1,22 @@
 import { useState } from 'react'
+import Chevron from '../../Assets/Chevron.png'
 import '../../Styles/Box.css'
 
 function Fiabilite(){
     const [isOpen, setIsOpen] = useState(true)
+
     return isOpen ? (
         <div>
             <div className="kasa-box">
                 <h4>Fiabilité</h4>
-                <h4 className="kasa-btn-open-box" onClick={() => setIsOpen(false)}>^</h4>
+                <img src={Chevron} alt='icone chevron' className='kasa-btn-open-box' onClick={() => setIsOpen(false)}/>
             </div>
         </div>
     ) : (
         <div>
             <div className="kasa-box">
                 <h4>Fiabilité</h4>
-                <h4 className="kasa-btn-open-box" onClick={() => setIsOpen(true)}>^</h4>
+                <img src={Chevron} alt='icone chevron' className='kasa-btn-close-box' onClick={() => setIsOpen(true)}/>
             </div>
                 <div className="kasa-text">
                     <p>Les annonces postées sur Kasa garantissent une fiabilité totale.

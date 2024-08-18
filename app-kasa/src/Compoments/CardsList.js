@@ -1,16 +1,19 @@
 import '../Styles/CardsList.css'
+import {locationList} from '../Data/LocationList'
 import Card from '../Compoments/Card'
+
 
 
 function CardsList(){
     return (
         <div className="kasa-content-list">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {locationList.map(({ id, title, cover}) =>
+                <Card
+                key={id}
+                title={title}
+                cover={cover}
+                />
+            )}
         </div>
     )
 

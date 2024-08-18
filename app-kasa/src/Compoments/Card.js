@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
 import '../Styles/Card.css'
 
 
-function Card(){
+function Card({ title , cover}){
     return (
-        <div className="kasa-card">
-            <p className="kasa-card-title">Titre de la location</p>
-        </div>
+        <Link to="/InfoLacation" className="kasa-card">
+            <img className='kasa-card-cover' src={cover} alt={`${title}`}/>
+            <span className="kasa-card-title">{title}</span>
+        </Link>
     )
 
 }

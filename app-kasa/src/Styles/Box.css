@@ -25,5 +25,17 @@ p{
 }
 
 .kasa-btn-open-box{
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
     cursor: pointer;
+    transform: rotate(0deg);
+}
+
+.kasa-btn-close-box{
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transform: rotate(180deg);
 }

@@ -4,12 +4,21 @@
     border-radius: 15px;
     background: linear-gradient(rgb(255,96,96) , rgb(178,67,67));  
     cursor: pointer;
+    text-decoration: none;
+}
+
+.kasa-card-cover{
+    width: 340px;
+    height: 280px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 .kasa-card-title{
+    width: 320px;
     position: relative;
-    top: 80%;
-    left: 5%;
+    top: 0%;
+    left: 3%;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }

@@ -4,8 +4,8 @@ import '../Styles/Navigation.css'
 function Navigation() {
     return (
         <nav className="kasa-lien-content">
-            <Link to="/" className="kasa-lien">Accueil</Link>
-            <Link to="/APropos" className="kasa-lien">A Propos</Link>
+            <Link to="/" className="kasa-lien-accueil">Accueil</Link>
+            <Link to="/APropos" className="kasa-lien-apropos">A Propos</Link>
         </nav>
     )
 }

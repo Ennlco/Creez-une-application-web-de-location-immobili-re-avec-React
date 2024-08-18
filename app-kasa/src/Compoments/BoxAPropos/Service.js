@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Chevron from '../../Assets/Chevron.png'
 import '../../Styles/Box.css'
 
 function Service(){
@@ -7,14 +8,14 @@ function Service(){
         <div>
             <div className="kasa-box">
                 <h4>Service</h4>
-                <h4 className="kasa-btn-open-box" onClick={() => setIsOpen(false)}>^</h4>
+                <img src={Chevron} alt='icone chevron' className="kasa-btn-open-box" onClick={() => setIsOpen(false)}/>
             </div>
         </div>  
     ) : (
         <div>
             <div className="kasa-box">
                 <h4>Service</h4>
-                <h4 className="kasa-btn-open-box" onClick={() => setIsOpen(true)}>^</h4>
+                <img src={Chevron} alt='icone chevron' className="kasa-btn-close-box" onClick={() => setIsOpen(true)}/>
             </div>
             <div className="kasa-text">
                 <p>La bienveillance fait partie des valeurs fondatrices de Kasa.
