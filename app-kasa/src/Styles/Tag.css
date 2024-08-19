@@ -1,12 +1,10 @@
-.kasa-tag-content{
+
+.kasa-name-tag{
     width: 115px;
     height: 25px;
     border-radius: 10px;
     background-color: #FF6060;
     text-align: center;
-}
-
-.kasa-name-tag{
     color: white;
     font-size: 14px;
 }

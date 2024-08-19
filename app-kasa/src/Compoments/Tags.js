@@ -1,10 +1,15 @@
 import '../Styles/Tag.css'
+import {locationList} from '../Data/LocationList'
 
-function Tags({tags}){
-    return(
-        <div className="kasa-tag-content">
-            <span className="kasa-name-tag">{tags}</span>
-        </div>
+function Tags(){
+    const tagsList = locationList[0].tags
+    return(   
+        tagsList.map(()=>
+            <div>
+                <span className="kasa-name-tag">{tagsList}</span>
+            </div>
+        )   
+            
     )
 }
 
