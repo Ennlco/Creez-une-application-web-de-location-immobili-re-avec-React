@@ -61,10 +61,11 @@
 .kasa-hote{
     display: flex;
     flex-direction: row;
-    width: 167px;
+    justify-content: space-between;
 }
 
 .kasa-name-hote{
+    width: 90px;
     display: flex;
     flex-wrap: wrap;
     color: #FF6060;
@@ -128,5 +129,5 @@
 
 .kasa-equipements-text{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }

@@ -3,6 +3,7 @@ import { useState } from 'react'
 import {locationList} from '../../Data/LocationList'
 import Chevron from '../../Assets/Chevron.png'
 import Tags from '../../Compoments/Tags'
+import Rate from '../../Compoments/Rate'
 
 function InfoLocation({cover, title, description, name, picture, location, equipments}){
     const [isOpen, setIsOpen] = useState(true)
@@ -31,9 +32,7 @@ function InfoLocation({cover, title, description, name, picture, location, equip
                         <span className='kasa-name-hote'>{locationList[0].host.name}</span>
                         <img className='kasa-img-hote' src={locationList[0].host.picture} alt={`${locationList[0].name}`}/>
                     </div>
-                    <div className='kasa-rate'>
-
-                    </div>
+                    <Rate rateValue={locationList[0].rating}/>
                 </div>
             </div>
             <div className='kasa-info-plus'>
@@ -72,9 +71,7 @@ function InfoLocation({cover, title, description, name, picture, location, equip
                         <span className='kasa-name-hote'>{locationList[0].host.name}</span>
                         <img className='kasa-img-hote' src={locationList[0].host.picture} alt={`${locationList[0].name}`}/>
                     </div>
-                    <div className='kasa-rate'>
-
-                    </div>
+                    <Rate rateValue={locationList[0].rating}/>
                 </div>
             </div>
             <div className='kasa-info-plus'>
