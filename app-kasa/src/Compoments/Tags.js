@@ -1,8 +1,7 @@
 import '../Styles/Tag.css'
-import {locationList} from '../Data/LocationList'
 
-function Tags(){
-    const tagsList = locationList[0].tags
+function Tags({tagsElement}){
+    const tagsList = tagsElement
     return(   
         tagsList.map(()=>
             <div>

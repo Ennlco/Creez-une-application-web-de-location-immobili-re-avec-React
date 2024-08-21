@@ -4,17 +4,6 @@
     margin-top: 40px;
 }
 
-.kasa-gallery{
-    width: 1240px;
-    height: 415px;
-}
-
-.kasa-info-cover{
-    width: 1240px;
-    height: 415px;
-    border-radius: 25px;
-}
-
 .kasa-info-base-content{
     width: 1240px;
     display: flex;
