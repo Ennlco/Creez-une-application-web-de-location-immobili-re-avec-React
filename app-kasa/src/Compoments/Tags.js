@@ -1,11 +1,10 @@
 import '../Styles/Tag.css'
 
 function Tags({tagsElement}){
-    const tagsList = tagsElement
     return(   
-        tagsList.map(()=>
+        tagsElement.map((e) =>
             <div>
-                <span className="kasa-name-tag">{tagsList}</span>
+                <span className="kasa-name-tag">{e}</span>
             </div>
         )   
             
