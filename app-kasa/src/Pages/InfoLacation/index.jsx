@@ -3,6 +3,7 @@ import {locationList} from '../../Data/LocationList'
 import Carousel from '../../Compoments/Carousel'
 import TitleLoc from '../../Compoments/TitleLoc'
 import Tags from '../../Compoments/Tags'
+import Hote from '../../Compoments/Hote'
 import Rate from '../../Compoments/Rate'
 import Description from '../../Compoments/Description'
 import Equipement from '../../Compoments/Equipement'
@@ -35,13 +36,12 @@ function InfoLocation(){
                     <div className="kasa-tag-content">
                         <Tags tagsElement={tagspage} />
                     </div>
-                    
                 </div>
                 <div className='kasa-hote-info-content'>
-                    <div className='kasa-hote'>
-                        <span className='kasa-name-hote'>{hoteName}</span>
-                        <img className='kasa-img-hote' src={hoteImg} alt={`${hoteImg} ${hoteName}`}/>
-                    </div>
+                    <Hote 
+                        name={hoteName}
+                        profilIng={hoteImg}
+                    />
                     <Rate rateValue={rateStar}/>
                 </div>
             </div>

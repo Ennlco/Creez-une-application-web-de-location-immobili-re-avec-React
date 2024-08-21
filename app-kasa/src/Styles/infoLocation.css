@@ -34,26 +34,6 @@
     flex-direction: column;
 }
 
-.kasa-hote{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.kasa-name-hote{
-    width: 90px;
-    display: flex;
-    flex-wrap: wrap;
-    color: #FF6060;
-    font-size: 18px;
-}
-
-.kasa-img-hote{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-
 .kasa-info-plus{
     width: 1240px;
     display: flex;

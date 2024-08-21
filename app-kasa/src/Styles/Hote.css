@@ -1,0 +1,20 @@
+.kasa-hote{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 5px;
+}
+
+.kasa-name-hote{
+    width: 100px;
+    display: flex;
+    text-align: right;
+    color: #FF6060;
+    font-size: 18px;
+}
+
+.kasa-img-hote{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
