@@ -1,5 +1,4 @@
 import '../../Styles/Css/infoLocation.css'
-import { useState } from 'react'
 import {locationList} from '../../Data/LocationList'
 import Carousel from '../../Compoments/Carousel'
 import TitleLoc from '../../Compoments/TitleLoc'
@@ -12,7 +11,7 @@ import Equipement from '../../Compoments/Equipement'
 
 
 function InfoLocation(){
-    const i = useState(0)
+    const i = 0
 
     const imgCarousel = locationList[i].pictures
     const titre = locationList[i].title
