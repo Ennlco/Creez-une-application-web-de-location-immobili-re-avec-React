@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import './Styles/index.css'
+import './Styles/Css/index.css'
 import Accueil from './Pages/Acceuil/'
 import APropos from './Pages/APropos/'
 import InfoLocation from './Pages/InfoLacation/'

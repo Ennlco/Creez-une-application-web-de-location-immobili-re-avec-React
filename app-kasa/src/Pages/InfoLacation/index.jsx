@@ -1,4 +1,5 @@
-import '../../Styles/infoLocation.css'
+import '../../Styles/Css/infoLocation.css'
+import { useState } from 'react'
 import {locationList} from '../../Data/LocationList'
 import Carousel from '../../Compoments/Carousel'
 import TitleLoc from '../../Compoments/TitleLoc'
@@ -9,17 +10,19 @@ import Description from '../../Compoments/Description'
 import Equipement from '../../Compoments/Equipement'
 
 
+
 function InfoLocation(){
-    
-    const imgCarousel = locationList[0].pictures
-    const titre = locationList[0].title
-    const lieu = locationList[0].location
-    const tagspage = locationList[0].tags
-    const hoteName = locationList[0].host.name
-    const hoteImg = locationList[0].host.picture
-    const rateStar = locationList[0].rating
-    const equip = locationList[0].equipments
-    const descrip = locationList[0].description
+    const i = useState(0)
+
+    const imgCarousel = locationList[i].pictures
+    const titre = locationList[i].title
+    const lieu = locationList[i].location
+    const tagspage = locationList[i].tags
+    const hoteName = locationList[i].host.name
+    const hoteImg = locationList[i].host.picture
+    const rateStar = locationList[i].rating
+    const equip = locationList[i].equipments
+    const descrip = locationList[i].description
     
     
     return(

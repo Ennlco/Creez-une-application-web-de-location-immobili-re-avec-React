@@ -1,0 +1,53 @@
+.kasa-box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 562px;
+  height: 32px;
+  padding: 10px;
+  color: white;
+  background-color: #FF6060;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.kasa-box-title .kasa-btn-open-box {
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transform: rotate(0deg);
+}
+.kasa-box-title .kasa-btn-close-box {
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.kasa-description-text {
+  width: 562px;
+  padding: 10px;
+  color: black;
+  background-color: #F6F6F6;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.kasa-equipements-text {
+  width: 562px;
+  padding: 10px;
+  color: black;
+  background-color: #F6F6F6;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.kasa-equipements-text .kasa-text-equipement {
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=BoxInfo.css.map */

@@ -1,4 +1,4 @@
-import '../Styles/Tag.css'
+import '../Styles/Css/Tag.css'
 
 function Tags({tagsElement}){
     return(   

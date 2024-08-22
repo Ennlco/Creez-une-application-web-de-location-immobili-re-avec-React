@@ -1,4 +1,4 @@
-import '../Styles/CardsList.css'
+import '../Styles/Css/CardsList.css'
 import {locationList} from '../Data/LocationList'
 import Card from '../Compoments/Card'
 

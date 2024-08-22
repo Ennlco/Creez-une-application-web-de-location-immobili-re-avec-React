@@ -1,4 +1,4 @@
-import '../../Styles/VignetteTop.css'
+import '../../Styles/Css/VignetteTop.css'
 
 function VignetteAccueil(){
     return(

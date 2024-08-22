@@ -1,0 +1,17 @@
+.kasa-star-content {
+  background-image: url(../Assets/star-inactive\ .png);
+  background-repeat: repeat-x;
+  width: 177px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.kasa-star-content .kasa-star-active {
+  width: 25px;
+  height: 25px;
+  margin-left: 6px;
+}
+
+/*# sourceMappingURL=Rate.css.map */

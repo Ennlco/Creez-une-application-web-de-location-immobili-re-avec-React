@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Chevron from '../../Assets/Chevron.png'
-import '../../Styles/Box.css'
+import '../../Styles/Css/Box.css'
 
 function Securite(){
     const [isOpen, setIsOpen] = useState(true)

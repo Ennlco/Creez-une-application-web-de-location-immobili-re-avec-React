@@ -9,6 +9,23 @@
     color: white;
     background-color: rgb(255,96,96);
     font-size: 24px;
+
+    .kasa-btn-open-box{
+        width: 20px;
+        height: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transform: rotate(0deg);
+    }
+    
+    .kasa-btn-close-box{
+        width: 20px;
+        height: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transform: rotate(180deg);
+    }
+    
 }
 
 .kasa-text{
@@ -18,25 +35,8 @@
     color: black;
     background-color: #F6F6F6;
     font-size: 20px;
-}
 
-p{
-    margin-top: 12px;
+    p{
+        margin-top: 12px;
+    }
 }
-
-.kasa-btn-open-box{
-    width: 20px;
-    height: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-    transform: rotate(0deg);
-}
-
-.kasa-btn-close-box{
-    width: 20px;
-    height: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-    transform: rotate(180deg);
-}
-

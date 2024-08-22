@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../Styles/Carousel.css'
+import '../Styles/Css/Carousel.css'
 import Chevron from '../Assets/Chevron.png'
 
 function Carousel({images}) {

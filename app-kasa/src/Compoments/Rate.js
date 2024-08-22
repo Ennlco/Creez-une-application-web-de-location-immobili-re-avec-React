@@ -1,4 +1,4 @@
-import '../Styles/Rate.css'
+import '../Styles/Css/Rate.css'
 import StarActive from '../Assets/star-active.png'
 
 function Rate({ rateValue }){

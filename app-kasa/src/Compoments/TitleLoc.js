@@ -1,4 +1,4 @@
-import '../Styles/TitleLoc.css'
+import '../Styles/Css/TitleLoc.css'
 
 function TitleLoc({title, lieu}){
     return(

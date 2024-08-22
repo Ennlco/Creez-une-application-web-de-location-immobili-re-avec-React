@@ -1,0 +1,12 @@
+.kasa-lien-content {
+  display: flex;
+  justify-content: space-between;
+  width: 232px;
+}
+.kasa-lien-content .kasa-lien-accueil, .kasa-lien-content .kasa-lien-apropos {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Navigation.css.map */

@@ -1,4 +1,4 @@
-import '../../Styles/BoxList.css'
+import '../../Styles/Css/BoxList.css'
 import Fiabilite from './Fiabilite'
 import Respect from './Respect'
 import Service from './Service'

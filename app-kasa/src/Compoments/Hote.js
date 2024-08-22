@@ -1,4 +1,4 @@
-import '../Styles/Hote.css'
+import '../Styles/Css/Hote.css'
 
 function Hote({name, profilIng}){
     return(

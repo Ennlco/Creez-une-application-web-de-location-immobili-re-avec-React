@@ -1,0 +1,40 @@
+.kasa-box {
+  width: 1010px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: rgb(255, 96, 96);
+  font-size: 24px;
+}
+.kasa-box .kasa-btn-open-box {
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transform: rotate(0deg);
+}
+.kasa-box .kasa-btn-close-box {
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.kasa-text {
+  width: 990px;
+  padding: 1px 20px 20px 20px;
+  text-align: justify;
+  color: black;
+  background-color: #F6F6F6;
+  font-size: 20px;
+}
+.kasa-text p {
+  margin-top: 12px;
+}
+
+/*# sourceMappingURL=Box.css.map */

@@ -1,0 +1,48 @@
+.kasa-gallery{
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    .kasa-carousel-btn{
+        position: absolute;
+        top: 36%;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
+        transition: 300ms;
+        border: none;
+        background-color: rgba(128, 128, 128, 0);
+        border-radius: 15px;
+    }
+    
+    .kasa-carousel-btn:hover{
+        background-color: rgba(128, 128, 128, 0.3);
+    }
+
+    .btn-prev{
+        left: 17%;
+        transform: rotate(-90deg);
+    }
+    
+    .btn-next{
+        right: 17%;
+        transform: rotate(90deg);
+    }
+
+    .kasa-img-btn-carousel{
+        width: 100px;
+        height: 40px;
+    }
+
+    .kasa-carousel-img{
+        width: 100%;
+        height: 415px;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+        object-fit: cover;
+    }
+}
+
+
+

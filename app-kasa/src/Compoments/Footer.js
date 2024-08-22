@@ -1,4 +1,4 @@
-import '../Styles/Footer.css'
+import '../Styles/Css/Footer.css'
 
 import logoFoot from '../Assets/LOGO.png'
 import CopyRight from '../Assets/© 2020 Kasa. All rights reserved.png'

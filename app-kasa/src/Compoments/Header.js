@@ -1,4 +1,4 @@
-import '../Styles/Header.css';
+import '../Styles/Css/Header.css';
 import logoHead from '../Assets/.LOGO.png'
 import Navigation from './Navigation'
 
