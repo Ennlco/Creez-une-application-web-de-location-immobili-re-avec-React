@@ -26,7 +26,9 @@ function InfoLocation(){
     
     return(
         <div className='kasa-all-info'>
-            <Carousel images={imgCarousel}/>
+            <Carousel 
+            key={imgCarousel}
+            images={imgCarousel}/>
             <div className='kasa-info-base-content'>
                 <div className='kasa-title-tags-content'>
                     <div className='kasa-title-content'>
@@ -36,7 +38,9 @@ function InfoLocation(){
                         />
                     </div>
                     <div className="kasa-tag-content">
-                        <Tags tagsElement={tagspage} />
+                        <Tags 
+                        key={tagspage}
+                        tagsElement={tagspage} />
                     </div>
                 </div>
                 <div className='kasa-hote-info-content'>
@@ -44,7 +48,9 @@ function InfoLocation(){
                         name={hoteName}
                         profilIng={hoteImg}
                     />
-                    <Rate rateValue={rateStar}/>
+                    <Rate 
+                    key={rateStar}
+                    rateValue={rateStar}/>
                 </div>
             </div>
             <div className='kasa-info-plus'>

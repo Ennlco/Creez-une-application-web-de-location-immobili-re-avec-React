@@ -9,7 +9,7 @@ function Card({ title , cover, id}){
             <img className='kasa-card-cover' src={cover} alt={`${title}`}/>
             <span className="kasa-card-title">{title}</span>
         </Link>
-    )
+    ) 
 
 }
 
