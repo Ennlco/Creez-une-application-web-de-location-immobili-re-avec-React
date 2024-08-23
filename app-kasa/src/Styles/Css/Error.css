@@ -22,4 +22,20 @@
   text-decoration: underline;
 }
 
+@media (max-width: 400px) {
+  .kasa-content-error {
+    margin-top: 80px;
+  }
+  .kasa-content-error h1 {
+    font-size: 96px;
+  }
+  .kasa-content-error h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .kasa-content-error .kasa-lien-back {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=Error.css.map */

@@ -10,3 +10,13 @@
     font-weight: bold;
     color: black;
 }
+
+@media (max-width: 400px) {
+    .kasa-info-title{
+        font-size: 18px;
+    }
+    
+    .kasa-info-location{
+        font-size: 14px;
+    }
+}

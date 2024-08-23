@@ -7,13 +7,28 @@ footer {
   width: 100%;
   height: 209px;
   background-color: black;
-  gap: 30px;
 }
 footer .kasa-logo-footer {
   width: 100px;
 }
 footer .kasa-lcopyright {
-  width: 400px;
+  font-size: 24px;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  footer {
+    margin-top: 20px;
+  }
+  footer .kasa-logo-footer {
+    width: 122px;
+    height: 40px;
+  }
+  footer .kasa-lcopyright {
+    text-align: center;
+    font-size: 14px;
+    width: 140px;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */

@@ -1,4 +1,6 @@
 import '../../Styles/Css/infoLocation.css'
+import { useParams } from 'react-router-dom';
+import { useEffect } from 'react'
 import {locationList} from '../../Data/LocationList'
 import Carousel from '../../Compoments/Carousel'
 import TitleLoc from '../../Compoments/TitleLoc'
@@ -11,19 +13,23 @@ import Equipement from '../../Compoments/Equipement'
 
 
 function InfoLocation(){
-    const i = 0
+    const {id} = useParams()
+    const location = locationList.find(loc => loc.id === id);
 
-    const imgCarousel = locationList[i].pictures
-    const titre = locationList[i].title
-    const lieu = locationList[i].location
-    const tagspage = locationList[i].tags
-    const hoteName = locationList[i].host.name
-    const hoteImg = locationList[i].host.picture
-    const rateStar = locationList[i].rating
-    const equip = locationList[i].equipments
-    const descrip = locationList[i].description
+    const imgCarousel = location.pictures
+    const titre = location.title
+    const lieu = location.location
+    const tagspage = location.tags
+    const hoteName = location.host.name
+    const hoteImg = location.host.picture
+    const rateStar = location.rating
+    const equip = location.equipments
+    const descrip = location.description
     
-    
+    useEffect(() => {
+		document.title = `Info Location`
+	}, [])
+
     return(
         <div className='kasa-all-info'>
             <Carousel 
@@ -39,18 +45,21 @@ function InfoLocation(){
                     </div>
                     <div className="kasa-tag-content">
                         <Tags 
-                        key={tagspage}
                         tagsElement={tagspage} />
                     </div>
                 </div>
                 <div className='kasa-hote-info-content'>
-                    <Hote 
-                        name={hoteName}
-                        profilIng={hoteImg}
-                    />
-                    <Rate 
-                    key={rateStar}
-                    rateValue={rateStar}/>
+                    <div className='kasa-hote'>
+                        <Hote 
+                            name={hoteName}
+                            profilIng={hoteImg}
+                        />
+                    </div>
+                    <div className='kasa-rate'>
+                        <Rate 
+                        key={rateStar}
+                        rateValue={rateStar}/>
+                    </div>
                 </div>
             </div>
             <div className='kasa-info-plus'>

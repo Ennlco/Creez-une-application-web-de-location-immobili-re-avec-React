@@ -9,4 +9,19 @@
   text-decoration: none;
 }
 
+.kasa-lien-accueil.active, .kasa-lien-apropos.active {
+  text-decoration: underline; 
+}
+
+@media (max-width: 400px) {
+  .kasa-lien-content {
+    width: 45%;
+  }
+
+  .kasa-lien-content .kasa-lien-accueil, .kasa-lien-content .kasa-lien-apropos {
+    font-size: 18px;
+  }
+}
+
+
 /*# sourceMappingURL=Navigation.css.map */

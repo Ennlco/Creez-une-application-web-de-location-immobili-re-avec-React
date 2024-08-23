@@ -2,7 +2,7 @@ import '../Styles/Css/Hote.css'
 
 function Hote({name, profilIng}){
     return(
-        <div className='kasa-hote'>
+        <div className='kasa-hote-content'>
             <span className='kasa-name-hote'>{name}</span>
             <img className='kasa-img-hote' src={profilIng} alt={`${profilIng} ${name}`}/>
         </div>

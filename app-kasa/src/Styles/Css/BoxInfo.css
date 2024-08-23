@@ -52,4 +52,22 @@
   margin-top: 5px;
 }
 
+@media (max-width: 400px) {
+  .kasa-box-title {
+    width: 316px;
+    height: 15px;
+    border-radius: 5px;
+  }
+
+  .kasa-description-text {
+    width: 316px;
+    font-size: 14px;
+  }
+  
+  .kasa-equipements-text {
+    width: 316px;
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=BoxInfo.css.map */

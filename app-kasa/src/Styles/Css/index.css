@@ -15,4 +15,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+@media (max-width: 400px) {
+  body .kasa-content-all {
+    padding: 20px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

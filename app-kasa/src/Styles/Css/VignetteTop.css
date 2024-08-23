@@ -43,4 +43,35 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 400px) {
+  .kasa-img-intro-accueil {
+    margin-top: 20px;
+    width: 335px;
+    height: 110px;
+    border-radius: 10px;
+  }
+  .kasa-img-intro-accueil .kasa-img-intro-text {
+    justify-content: left;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+
+  .kasa-img-intro-accueil .kasa-img-intro-text h3 {
+    margin-left: 20px;
+    width: 200px;
+  }
+  
+  .kasa-img-intro-apropos {
+    margin-top: 20px;
+    width: 335px;
+    height: 110px;
+    border-radius: 10px;
+  }
+  .kasa-img-intro-apropos .kasa-img-intro-black {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+
 /*# sourceMappingURL=VignetteTop.css.map */

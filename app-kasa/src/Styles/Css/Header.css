@@ -8,6 +8,7 @@ header {
 header .kasa-logo-lien-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 header .kasa-logo-lien-content .kasa-logo-header {
@@ -15,4 +16,14 @@ header .kasa-logo-lien-content .kasa-logo-header {
   height: 68px;
 }
 
+@media (max-width: 400px) {
+  header {
+    width: 100%;
+  }
+
+  header .kasa-logo-lien-content .kasa-logo-header {
+    width: 145px;
+    height: 47px;
+  }
+}
 /*# sourceMappingURL=Header.css.map */

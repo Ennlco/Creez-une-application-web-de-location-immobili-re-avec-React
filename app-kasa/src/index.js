@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './Styles/Css/index.css'
 import Accueil from './Pages/Acceuil/'
 import APropos from './Pages/APropos/'
-import InfoLocation from './Pages/InfoLacation/'
+import InfoLocation from './Pages/InfoLocation'
 import Header from './Compoments/Header'
 import Footer from './Compoments/Footer'
 import Error from './Compoments/Error'
@@ -18,7 +18,7 @@ root.render(
         <Routes>
           <Route path='/' element={<Accueil/>}/>
           <Route path='/APropos' element={<APropos/>}/>
-          <Route path='/InfoLacation' element={<InfoLocation/>}/>
+          <Route path='/InfoLocation/:id' element={<InfoLocation/>}/>
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
