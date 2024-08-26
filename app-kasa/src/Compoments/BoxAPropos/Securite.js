@@ -10,6 +10,14 @@ function Securite(){
                 <h4>Sécurité</h4>
                 <img src={Chevron} alt='icone chevron' className="kasa-btn-open-box" onClick={() => setIsOpen(false)}/>
             </div>
+            <div className="kasa-text close">
+                <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs,
+                    chaque logement correspond aux critères de sécurité établis par nos services.
+                    En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes
+                    de vérifier que les standards sont bien respectés. Nous organisons également des
+                    ateliers sur la sécurité domestique pour nos hôtes.
+                </p>
+            </div>
         </div>
     ) : (
         <div>
@@ -17,7 +25,7 @@ function Securite(){
                 <h4>Sécurité</h4>
                 <img src={Chevron} alt='icone chevron' className="kasa-btn-close-box" onClick={() => setIsOpen(true)}/>
             </div>
-            <div className="kasa-text">
+            <div className="kasa-text open">
                 <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs,
                     chaque logement correspond aux critères de sécurité établis par nos services.
                     En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes

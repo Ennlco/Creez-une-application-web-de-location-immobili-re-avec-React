@@ -10,6 +10,11 @@ function Equipement({equip}){
                 <span>Équipements</span>
                 <img src={Chevron} alt='icone chevron' className='kasa-btn-open-box'onClick={() => setIsOpen(false)}/>
             </div>
+            <div className='kasa-equipements-text close'>
+                {equip.map((e, i) => 
+                <p key={i} className='kasa-text-equipement'>{e}</p>
+                )}
+            </div>
         </div>
     ) : (
         <div className='kasa-box-content'> 
@@ -17,9 +22,9 @@ function Equipement({equip}){
                 <span>Équipements</span>
                 <img src={Chevron} alt='icone chevron' className='kasa-btn-close-box'onClick={() => setIsOpen(true)}/>
             </div>
-            <div className='kasa-equipements-text'>
-                {equip.map((e) => 
-                <p className='kasa-text-equipement'>{e}</p>
+            <div className='kasa-equipements-text open'>
+                {equip.map((e, i) => 
+                <p key={i} className='kasa-text-equipement'>{e}</p>
                 )}
             </div>
         </div>

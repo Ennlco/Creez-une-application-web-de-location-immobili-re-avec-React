@@ -1,4 +1,6 @@
 .kasa-box-title {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,6 +52,21 @@
   margin: 0px;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+.close{
+  transform: translateY(-50px);
+  opacity: 0;
+  height: 0px;
+  margin-bottom: -21px;
+  transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+
+}
+
+.open{
+  transform: translateY(0px);
+  opacity: 1;
+  transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
 }
 
 @media (max-width: 400px) {

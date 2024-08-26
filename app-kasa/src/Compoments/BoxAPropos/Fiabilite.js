@@ -11,6 +11,12 @@ function Fiabilite(){
                 <h4>Fiabilité</h4>
                 <img src={Chevron} alt='icone chevron' className='kasa-btn-open-box' onClick={() => setIsOpen(false)}/>
             </div>
+            <div className="kasa-text close">
+                <p>Les annonces postées sur Kasa garantissent une fiabilité totale.
+                    Les photos sont conformes aux logements,
+                    et toutes les information sont régulièrement vérifiées par nos équipes.
+                </p>
+            </div>
         </div>
     ) : (
         <div>
@@ -18,7 +24,7 @@ function Fiabilite(){
                 <h4>Fiabilité</h4>
                 <img src={Chevron} alt='icone chevron' className='kasa-btn-close-box' onClick={() => setIsOpen(true)}/>
             </div>
-                <div className="kasa-text">
+                <div className="kasa-text open">
                     <p>Les annonces postées sur Kasa garantissent une fiabilité totale.
                         Les photos sont conformes aux logements,
                         et toutes les information sont régulièrement vérifiées par nos équipes.
