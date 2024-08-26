@@ -10,9 +10,9 @@ function Carousel({images}) {
             {images.map((_, index) => (
             <span
             key={index}
-            className={`carousel__indicators ${index === activeIndex ? 'active' : 'inactive'} `}
+            className={`carousel__indicators ${index === activeIndex && images.length > 1 ? 'active' : 'inactive'} `}
             onClick={() =>(index)}
-            >{index}/{images.length - 1}</span>  
+            >{index + 1}/{images.length}</span>  
             ))}
           </div>
         );
@@ -33,13 +33,13 @@ function Carousel({images}) {
         setActiveIndex(index);
     };
 
-    return (
+    return(
         <div className='kasa-gallery'>
-            <button onClick={prevSlide} className='kasa-carousel-btn btn-prev'>
+            <button onClick={prevSlide} className={`${images.length > 1 ? 'kasa-carousel-btn btn-prev' : 'kasa-carousel-btn-inactive'}`} >
                 <img src={Chevron} alt='icone bouton précedent' className='kasa-img-btn-carousel'/>
             </button>
             <img src={images[activeIndex]} alt={`Slide ${activeIndex}`} className='kasa-carousel-img' />
-            <button onClick={nextSlide} className='kasa-carousel-btn btn-next'>
+            <button onClick={nextSlide} className={`${images.length > 1 ? 'kasa-carousel-btn btn-next' : 'kasa-carousel-btn-inactive'}`}>
                 <img src={Chevron} alt='icone bouton suivant' className='kasa-img-btn-carousel'/>
             </button>
             <CarouselIndicators

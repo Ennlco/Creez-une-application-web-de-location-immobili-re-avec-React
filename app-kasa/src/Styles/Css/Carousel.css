@@ -38,6 +38,10 @@
   object-fit: cover;
 }
 
+.kasa-carousel-btn-inactive{
+  display: none;
+}
+
 .carousel__indicators{
   display: flex;
   position: absolute;
