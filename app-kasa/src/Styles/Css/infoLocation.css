@@ -22,6 +22,7 @@
 .kasa-all-info .kasa-info-base-content .kasa-title-tags-content .kasa-tag-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 15px;
 }
 .kasa-all-info .kasa-info-base-content .kasa-hote-info-content {
