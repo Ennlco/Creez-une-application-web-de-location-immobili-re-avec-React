@@ -1,0 +1,28 @@
+header {
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1240px;
+
+    .kasa-logo-lien-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .kasa-logo-header {
+            width: 210px;
+            height: 68px;
+
+            @media (max-width: 400px) {
+                width: 145px;
+                height: 47px;
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+}

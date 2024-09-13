@@ -11,30 +11,35 @@
   font-size: 288px;
   color: #ff6060;
 }
+@media (max-width: 400px) {
+  .kasa-content-error h1 {
+    font-size: 96px;
+  }
+}
 .kasa-content-error h2 {
   font-size: 50px;
   font-weight: 500;
   color: #ff6060;
+}
+@media (max-width: 400px) {
+  .kasa-content-error h2 {
+    text-align: center;
+    font-size: 18px;
+  }
 }
 .kasa-content-error .kasa-lien-back {
   font-size: 30px;
   color: black;
   text-decoration: underline;
 }
-
+@media (max-width: 400px) {
+  .kasa-content-error .kasa-lien-back {
+    font-size: 14px;
+  }
+}
 @media (max-width: 400px) {
   .kasa-content-error {
     margin-top: 80px;
-  }
-  .kasa-content-error h1 {
-    font-size: 96px;
-  }
-  .kasa-content-error h2 {
-    text-align: center;
-    font-size: 18px;
-  }
-  .kasa-content-error .kasa-lien-back {
-    font-size: 14px;
   }
 }
 

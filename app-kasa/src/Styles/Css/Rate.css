@@ -13,7 +13,13 @@
   height: 25px;
   margin-left: 6px;
 }
-
+@media (max-width: 400px) {
+  .kasa-star-content .kasa-star-active {
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+  }
+}
 @media (max-width: 400px) {
   .kasa-star-content {
     background-size: contain;
@@ -21,11 +27,6 @@
     height: 24px;
     gap: 4px;
     margin-top: 0px;
-  }
-  .kasa-star-content .kasa-star-active {
-    width: 16px;
-    height: 16px;
-    margin-left: 4px;
   }
 }
 

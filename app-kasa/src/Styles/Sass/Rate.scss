@@ -1,0 +1,30 @@
+.kasa-star-content {
+    background-image: url(../../Assets/star-inactive\ .png);
+    background-repeat: repeat-x;
+    width: 177px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+
+    .kasa-star-active {
+        width: 25px;
+        height: 25px;
+        margin-left: 6px;
+
+        @media (max-width: 400px) {
+            width: 16px;
+            height: 16px;
+            margin-left: 4px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        background-size: contain;
+        width: 120px;
+        height: 24px;
+        gap: 4px;
+        margin-top: 0px;
+    }
+}

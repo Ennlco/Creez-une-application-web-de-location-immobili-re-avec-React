@@ -1,0 +1,73 @@
+.kasa-box {
+    width: 1010px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(255, 96, 96);
+    font-size: 24px;
+    z-index: 1;
+
+    .kasa-btn-open-box {
+        width: 20px;
+        height: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transform: rotate(0deg);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .kasa-btn-close-box {
+        width: 20px;
+        height: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transform: rotate(180deg);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    @media (max-width: 400px) {
+        width: 316px;
+        height: 15px;
+        border-radius: 7px;
+        font-size: 18px;
+    }
+}
+
+.kasa-text {
+    display: flex;
+    width: 990px;
+    padding: 1px 20px 20px 20px;
+    text-align: justify;
+    color: black;
+    background-color: #F6F6F6;
+    font-size: 20px;
+
+    .close{
+        transform: translateY(-50px);
+        opacity: 0;
+        height: 0px;
+        margin-bottom: -21px;
+        transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+      
+    }
+      
+    .open{
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+    }
+
+    p {
+        margin-top: 12px;
+    }
+
+    @media (max-width: 400px) {
+        width: 295px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,43 @@
+.kasa-content-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 80px;
+
+    h1 {
+        margin: 0px;
+        font-size: 288px;
+        color: #ff6060;
+
+        @media (max-width: 400px) {
+            font-size: 96px;
+        }
+    }
+
+    h2 {
+        font-size: 50px;
+        font-weight: 500;
+        color: #ff6060;
+
+        @media (max-width: 400px) {
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    .kasa-lien-back {
+        font-size: 30px;
+        color: black;
+        text-decoration: underline;
+
+        @media (max-width: 400px) {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        margin-top: 80px;
+    }
+  }

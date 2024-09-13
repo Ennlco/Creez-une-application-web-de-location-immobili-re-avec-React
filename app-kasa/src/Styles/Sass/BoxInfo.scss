@@ -1,0 +1,104 @@
+.kasa-box-title {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 562px;
+    height: 32px;
+    padding: 10px;
+    color: white;
+    background-color: #FF6060;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+
+    .kasa-btn-open-box {
+        width: 20px;
+        height: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transform: rotate(0deg);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .kasa-btn-close-box {
+        width: 20px;
+        height: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transform: rotate(180deg);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    @media (max-width: 400px) {
+        width: 316px;
+        height: 15px;
+        border-radius: 5px;
+    }
+}
+
+.kasa-description-text {
+    width: 562px;
+    padding: 10px;
+    color: black;
+    background-color: #F6F6F6;
+    font-size: 20px;
+    text-align: justify;
+
+    .close{
+        transform: translateY(-50px);
+        opacity: 0;
+        height: 0px;
+        margin-bottom: -21px;
+        transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+      
+    }
+      
+    .open{
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+    }
+
+    @media (max-width: 400px) {
+        width: 316px;
+        font-size: 14px;
+    }
+}
+  
+.kasa-equipements-text {
+    width: 562px;
+    padding: 10px;
+    color: black;
+    background-color: #F6F6F6;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .close{
+        transform: translateY(-50px);
+        opacity: 0;
+        height: 0px;
+        margin-bottom: -21px;
+        transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+      
+    }
+      
+    .open{
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+    }
+
+    .kasa-text-equipement {
+        margin: 0px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    @media (max-width: 400px) {
+        width: 316px;
+        font-size: 14px;
+    }
+}

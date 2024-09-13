@@ -29,6 +29,13 @@
   transform: rotate(180deg);
   transition: transform 0.2s ease-in-out;
 }
+@media (max-width: 400px) {
+  .kasa-box-title {
+    width: 316px;
+    height: 15px;
+    border-radius: 5px;
+  }
+}
 
 .kasa-description-text {
   width: 562px;
@@ -37,6 +44,24 @@
   background-color: #F6F6F6;
   font-size: 20px;
   text-align: justify;
+}
+.kasa-description-text .close {
+  transform: translateY(-50px);
+  opacity: 0;
+  height: 0px;
+  margin-bottom: -21px;
+  transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+}
+.kasa-description-text .open {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+}
+@media (max-width: 400px) {
+  .kasa-description-text {
+    width: 316px;
+    font-size: 14px;
+  }
 }
 
 .kasa-equipements-text {
@@ -48,39 +73,24 @@
   display: flex;
   flex-direction: column;
 }
-.kasa-equipements-text .kasa-text-equipement {
-  margin: 0px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.close{
+.kasa-equipements-text .close {
   transform: translateY(-50px);
   opacity: 0;
   height: 0px;
   margin-bottom: -21px;
   transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
-
 }
-
-.open{
+.kasa-equipements-text .open {
   transform: translateY(0px);
   opacity: 1;
   transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
 }
-
+.kasa-equipements-text .kasa-text-equipement {
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 @media (max-width: 400px) {
-  .kasa-box-title {
-    width: 316px;
-    height: 15px;
-    border-radius: 5px;
-  }
-
-  .kasa-description-text {
-    width: 316px;
-    font-size: 14px;
-  }
-  
   .kasa-equipements-text {
     width: 316px;
     font-size: 14px;

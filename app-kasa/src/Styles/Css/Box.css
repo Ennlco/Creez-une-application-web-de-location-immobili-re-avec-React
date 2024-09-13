@@ -28,6 +28,14 @@
   transform: rotate(180deg);
   transition: transform 0.2s ease-in-out;
 }
+@media (max-width: 400px) {
+  .kasa-box {
+    width: 316px;
+    height: 15px;
+    border-radius: 7px;
+    font-size: 18px;
+  }
+}
 
 .kasa-text {
   display: flex;
@@ -38,33 +46,22 @@
   background-color: #F6F6F6;
   font-size: 20px;
 }
-.kasa-text p {
-  margin-top: 12px;
-}
-
-.close{
+.kasa-text .close {
   transform: translateY(-50px);
   opacity: 0;
   height: 0px;
   margin-bottom: -21px;
   transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
-
 }
-
-.open{
+.kasa-text .open {
   transform: translateY(0px);
   opacity: 1;
   transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
 }
-
+.kasa-text p {
+  margin-top: 12px;
+}
 @media (max-width: 400px) {
-  .kasa-box {
-    width: 316px;
-    height: 15px;
-    border-radius: 7px;
-    font-size: 18px;
-  }
-
   .kasa-text {
     width: 295px;
     font-size: 15px;

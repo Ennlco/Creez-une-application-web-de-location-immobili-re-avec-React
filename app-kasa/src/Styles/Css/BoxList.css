@@ -1,14 +1,15 @@
-.kasa-box-list{
-    width: 1240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-top: 30px;
+.kasa-box-list {
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+@media (max-width: 400px) {
+  .kasa-box-list {
+    width: 335px;
+  }
 }
 
-@media (max-width: 400px) {
-    .kasa-box-list{
-        width: 335px;
-    }
-}
+/*# sourceMappingURL=BoxList.css.map */

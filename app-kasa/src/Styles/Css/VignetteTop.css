@@ -20,8 +20,29 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.kasa-img-intro-accueil .kasa-img-intro-text h3 {
+@media (max-width: 400px) {
+  .kasa-img-intro-accueil .kasa-img-intro-text {
+    justify-content: left;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+}
+.kasa-img-intro-accueil h3 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  .kasa-img-intro-accueil h3 {
+    margin-left: 20px;
+    width: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .kasa-img-intro-accueil {
+    margin-top: 20px;
+    width: 335px;
+    height: 110px;
+    border-radius: 10px;
+  }
 }
 
 .kasa-img-intro-apropos {
@@ -42,34 +63,18 @@
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 @media (max-width: 400px) {
-  .kasa-img-intro-accueil {
-    margin-top: 20px;
-    width: 335px;
-    height: 110px;
+  .kasa-img-intro-apropos .kasa-img-intro-black {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
   }
-  .kasa-img-intro-accueil .kasa-img-intro-text {
-    justify-content: left;
-    border-radius: 10px;
-    font-size: 20px;
-  }
-
-  .kasa-img-intro-accueil .kasa-img-intro-text h3 {
-    margin-left: 20px;
-    width: 200px;
-  }
-  
+}
+@media (max-width: 400px) {
   .kasa-img-intro-apropos {
     margin-top: 20px;
     width: 335px;
     height: 110px;
-    border-radius: 10px;
-  }
-  .kasa-img-intro-apropos .kasa-img-intro-black {
-    width: 100%;
-    height: 100%;
     border-radius: 10px;
   }
 }

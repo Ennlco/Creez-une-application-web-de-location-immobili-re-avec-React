@@ -12,17 +12,18 @@
   color: #FF6060;
   font-size: 18px;
 }
-.kasa-hote-content .kasa-img-hote {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
-
 @media (max-width: 400px) {
   .kasa-hote-content .kasa-name-hote {
     width: 60px;
     font-size: 14px;
   }
+}
+.kasa-hote-content .kasa-img-hote {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+@media (max-width: 400px) {
   .kasa-hote-content .kasa-img-hote {
     width: 32px;
     height: 32px;

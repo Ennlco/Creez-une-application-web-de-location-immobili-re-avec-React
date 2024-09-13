@@ -1,0 +1,107 @@
+.kasa-gallery {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    .kasa-content-btn {
+        width: 1240px;
+        height: 415px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .kasa-carousel-btn {
+            padding: 10px;
+            width: 100px;
+            height: 60px;
+            cursor: pointer;
+            z-index: 1;
+            transition: 300ms;
+            border: none;
+            background-color: rgba(128, 128, 128, 0);
+            border-radius: 15px;
+
+            .btn-prev {
+                transform: rotate(-90deg);
+            }
+
+            .btn-next {
+                transform: rotate(90deg);
+            }
+
+            .kasa-img-btn-carousel {
+                width: 80px;
+                height: 40px;
+
+                @media (max-width: 400px) {
+                    width: 20px;
+                    height: 12px;
+                }
+            }
+
+            @media (max-width: 400px) {
+                width: 40px;
+                height: 25px;
+                padding: 2px;
+            }
+        }
+    
+        .kasa-carousel-btn:hover {
+            background-color: rgba(128, 128, 128, 0.3);
+        }
+
+        .kasa-carousel-btn-inactive{
+            display: none;
+        }
+
+        @media (max-width: 400px) {
+            width: 335px;
+            height: 255px;
+        }
+    }
+
+    .kasa-carousel-img {
+        width: 100%;
+        height: 415px;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+        object-fit: cover;
+
+        .active{
+            opacity: 1;
+            transition: opacity 0.1s ease-in-out;
+        }
+          
+        .inactive{
+            opacity: 0;
+            transition: opacity 0.1s ease-in-out;
+        }
+
+        @media (max-width: 400px) {
+            width: 100%;
+            height: 255px;
+            object-fit: cover;
+        }
+    }
+
+    .carousel__indicators{
+        display: flex;
+        position: absolute;
+        top: 54%;
+        right: 50%;
+        color: white;
+        font-size: 24px;
+
+        @media (max-width: 400px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 400px) {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+}

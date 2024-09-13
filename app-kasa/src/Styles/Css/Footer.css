@@ -11,23 +11,26 @@ footer {
 footer .kasa-logo-footer {
   width: 100px;
 }
-footer .kasa-lcopyright {
-  font-size: 24px;
-  color: white;
-}
-
 @media (max-width: 400px) {
-  footer {
-    margin-top: 20px;
-  }
   footer .kasa-logo-footer {
     width: 122px;
     height: 40px;
   }
+}
+footer .kasa-lcopyright {
+  font-size: 24px;
+  color: white;
+}
+@media (max-width: 400px) {
   footer .kasa-lcopyright {
     text-align: center;
     font-size: 14px;
     width: 140px;
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    margin-top: 20px;
   }
 }
 

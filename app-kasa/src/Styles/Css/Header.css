@@ -15,15 +15,16 @@ header .kasa-logo-lien-content .kasa-logo-header {
   width: 210px;
   height: 68px;
 }
-
 @media (max-width: 400px) {
-  header {
-    width: 100%;
-  }
-
   header .kasa-logo-lien-content .kasa-logo-header {
     width: 145px;
     height: 47px;
   }
 }
+@media (max-width: 400px) {
+  header {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=Header.css.map */
